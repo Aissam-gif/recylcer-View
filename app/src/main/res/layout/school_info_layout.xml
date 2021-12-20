@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="bottom"
+    android:id="@+id/slidingUp"
+    app:umanoPanelHeight="50dp"
+    android:background="@drawable/school_container"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#007FFF"
+            android:orientation="vertical"
+            >
+           <com.google.android.material.card.MaterialCardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:theme="@style/Theme.MaterialComponents.Light"
+               >
+             <com.smarteist.autoimageslider.SliderView
+                 android:layout_width="match_parent"
+                 android:layout_height="300dp"
+                 android:scaleType="centerCrop"
+                 android:layout_gravity="top"
+                 android:id="@+id/images_slider"
+                 app:sliderAnimationDuration="600"
+                 app:sliderAutoCycleDirection="back_and_forth"
+                 app:sliderStartAutoCycle="true"
+                 app:sliderIndicatorAnimationDuration="600"
+                 app:sliderIndicatorGravity="center_horizontal|bottom"
+                 app:sliderIndicatorMargin="15dp"
+                 app:sliderIndicatorOrientation="horizontal"
+                 app:sliderIndicatorPadding="3dp"
+                 app:sliderIndicatorRadius="2dp"
+                 app:sliderIndicatorSelectedColor="#007FFF"
+                 app:sliderIndicatorUnselectedColor="#FFF"
+                 app:sliderScrollTimeInSec="2"
+                 />
+           </com.google.android.material.card.MaterialCardView>
+
+            <GridView
+                android:id="@+id/grid_view"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:stretchMode="columnWidth"
+                />
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/school_container"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/school_container"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:id="@+id/top_arrow"
+                    android:paddingBottom="10dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_top_arrow"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:text="Description"
+                    android:textColor="#232540"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="5dp"
+                    android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    Lorem Ipsum is simply dummy
+                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently"
+                    android:textColor="#626a75"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+

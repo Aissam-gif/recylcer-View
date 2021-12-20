@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/layout_bg"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:elevation="8dp"
+    android:clipToPadding="false"
+    >
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="#232540" />
+
+    <TextView
+        android:id="@+id/name_school"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/divider"
+        android:text="FPT"
+        android:textColor="#232540"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <xyz.hanks.library.bang.SmallBangView
+        android:id="@+id/imageViewAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/fullname_school">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/heart_selector" />
+
+    </xyz.hanks.library.bang.SmallBangView>
+
+    <TextView
+        android:id="@+id/fullname_school"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_school"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/divider"
+        android:text="faculté Polydisciplinaire Taroudant AZEAZEAZEAZEAZEAZE"
+        android:textColor="#a0a2a6"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/location_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ic_region" />
+
+        <TextView
+            android:id="@+id/city_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Casablanca"
+            android:textColor="#626a75"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/filiere_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/divider"
+            android:src="@drawable/ic_majors" />
+
+        <TextView
+            android:id="@+id/nbFiliere_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:text="10 filières"
+            android:textColor="#626a75"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+

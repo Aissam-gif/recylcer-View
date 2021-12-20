@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/layout_bg"
+    android:layout_marginTop="20dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:elevation="8dp"
+    android:clipToPadding="false"
+    >
+
+    <ImageView
+        android:id="@+id/image_university"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:maxHeight="120dp"
+        android:maxWidth="110dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:id="@+id/name_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/image_university"
+        android:text="HASSAN 2"
+        android:textColor="#232540"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="3dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/image_university"
+        android:background="#232540" />
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/divider"
+        android:src="@drawable/ic_region" />
+
+    <TextView
+        android:id="@+id/city_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="55dp"
+        android:layout_toRightOf="@id/location_image"
+        android:text="Casablanca"
+        android:textColor="#626a75"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/filiere_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="95dp"
+        android:layout_toRightOf="@id/divider"
+        android:src="@drawable/ic_majors" />
+
+    <TextView
+        android:id="@+id/nbFiliere_university"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/location_image"
+        android:text="10"
+        android:textColor="#626a75"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
